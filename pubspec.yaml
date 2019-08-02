@@ -1,0 +1,11 @@
+name: resideo_pedantic
+description: A starting point for Dart libraries or applications.
+# version: 1.0.0
+# homepage: https://www.example.com
+# author: Nico Spencer <nicholas.spencer@resideo.com>
+
+environment:
+  sdk: '>=2.4.0 <3.0.0'
+
+dependencies:
+  pedantic: ^1.8.0
