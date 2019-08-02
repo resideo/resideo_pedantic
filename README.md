@@ -8,7 +8,7 @@ Include this package under your dev dependencies in `pubspec.yaml`:
 
 ```yaml
 dev_dependencies:
-  reside_pedantic:
+  resideo_pedantic:
     url: git@github.com:resideo/resideo_pedantic.git
 ```
 
