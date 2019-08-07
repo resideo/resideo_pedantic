@@ -2,15 +2,66 @@ include: package:pedantic/analysis_options.1.8.0.yaml
 
 # For lint rules and documentation, see http://dart-lang.github.io/linter/lints.
 # Uncomment to specify additional rules.
-# linter:
-#   rules:
-#     - camel_case_types
+linter:
+  rules:
+    - always_declare_return_types
+    - always_put_required_named_parameters_first
+    - camel_case_types
+    - directives_ordering
+    - empty_statements
+    - file_names
+    - lines_longer_than_80_chars
+    - implementation_imports
+    - non_constant_identifier_names
+    - package_names
+    - prefer_double_quotes
+    - prefer_final_locals
+    - unnecessary_brace_in_string_interps
+    - unnecessary_getters_setters
+    - unnecessary_parenthesis
+    - unnecessary_this
+    - unused_import
 
 analyzer:
   exclude:
     - lib/**.g.dart
     - test_driver/**
     - test/**
+
   strong-mode:
     implicit-casts: false
     implicit-dynamic: false
+
+  errors:
+    avoid_empty_else: false   #not needed with empty_statements rule above
+    avoid_shadowing_type_parameters: false
+    null_closures: false
+    use_rethrow_when_possible: false
+    slash_for_doc_comments: false 
+    prefer_iterable_whereType: false
+    unnecessary_null_in_if_null_operators: false
+    
+    always_declare_return_types: error
+    always_put_required_named_parameters_first: error
+    constant_identifier_names: error  #need to decide as a team
+    empty_statements: error
+    file_names: error
+    library_names: error
+    recursive_getters: error
+    unawaited_futures: error
+    unused_import: error
+
+    camel_case_types: warning
+    curly_braces_in_flow_control_structures: warning
+    directives_ordering: warning
+    library_prefixes: warning
+    lines_longer_than_80_chars: warning
+    prefer_contains: warning
+    prefer_double_quotes: warning   #need to decide as a team
+    prefer_final_locals: warning    #need to decide as a team
+    prefer_equal_for_default_values: warning  #need to decide as a team
+    unnecessary_brace_in_string_interps: warning
+    unnecessary_getters_setters: warning
+    unnecessary_parenthesis: warning
+    unnecessary_new: warning
+    unnecessary_this: warning
