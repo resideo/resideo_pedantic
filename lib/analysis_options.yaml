@@ -1,16 +1,86 @@
-include: package:pedantic/analysis_options.yaml
+include: package:pedantic/analysis_options.1.8.0.yaml
 
 # For lint rules and documentation, see http://dart-lang.github.io/linter/lints.
-# Uncomment to specify additional rules.
-# linter:
-#   rules:
-#     - camel_case_types
+
+linter:
+  rules:
+    # additional rules not included in pedantic 1.8.0
+    - always_declare_return_types
+    - always_put_required_named_parameters_first
+    - avoid_classes_with_only_static_members
+    - camel_case_types
+    - directives_ordering
+    - empty_statements
+    - file_names
+    - lines_longer_than_80_chars
+    - implementation_imports
+    - non_constant_identifier_names
+    - package_names
+    - prefer_single_quotes
+    - prefer_final_locals
+    - unnecessary_brace_in_string_interps
+    - unnecessary_getters_setters
+    - unnecessary_parenthesis
+    - unnecessary_this
+    - unused_import
 
 analyzer:
   exclude:
     - lib/**.g.dart
     - test_driver/**
     - test/**
+
   strong-mode:
     implicit-casts: false
     implicit-dynamic: false
+
+  errors:
+    # ignore rules from pedantic default list
+    avoid_empty_else: false # unnecessary since empty_statements rule is in place
+    null_closures: false
+    use_rethrow_when_possible: false
+    slash_for_doc_comments: false 
+    prefer_iterable_whereType: false
+    unnecessary_null_in_if_null_operators: false
+    
+    # default pedantic rules set to errors
+    avoid_init_to_null: error
+    avoid_relative_lib_imports: error
+    avoid_return_types_on_setters: error
+    avoid_shadowing_type_parameters: error
+    avoid_types_as_parameter_names: error
+    curly_braces_in_flow_control_structures: error
+    empty_catches: error
+    empty_constructor_bodies: error
+    library_names: error
+    library_prefixes: error
+    no_duplicate_case_values: error
+    prefer_contains: error
+    prefer_equal_for_default_values: error
+    prefer_is_empty: error
+    prefer_is_not_empty: error
+    recursive_getters: error
+    type_init_formals: error
+    unawaited_futures: error
+    unnecessary_const: error
+    unnecessary_new: error
+    unrelated_type_equality_checks: error
+    valid_regexps: error
+
+    # additional rules set to error
+    always_declare_return_types: error
+    always_put_required_named_parameters_first: error
+    avoid_classes_with_only_static_members: error
+    camel_case_types: error
+    constant_identifier_names: error
+    directives_ordering: error
+    empty_statements: error
+    file_names: error
+    lines_longer_than_80_chars: error
+    prefer_single_quotes: error  
+    prefer_final_locals: error 
+    unnecessary_brace_in_string_interps: error
+    unnecessary_getters_setters: error
+    unnecessary_parenthesis: error
+    unnecessary_this: error
+    unused_import: error
