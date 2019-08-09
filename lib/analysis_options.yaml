@@ -1,4 +1,4 @@
-include: package:pedantic/analysis_options.1.8.0.yaml
+include: package:pedantic/analysis_options.1.7.0.yaml
 
 # For lint rules and documentation, see http://dart-lang.github.io/linter/lints.
 
@@ -16,10 +16,13 @@ linter:
     - implementation_imports
     - non_constant_identifier_names
     - package_names
+    - prefer_iterable_whereType
     - prefer_single_quotes
     - prefer_final_locals
     - unnecessary_brace_in_string_interps
+    - unnecessary_const
     - unnecessary_getters_setters
+    - unnecessary_new
     - unnecessary_parenthesis
     - unnecessary_this
     - unused_import
@@ -62,8 +65,6 @@ analyzer:
     recursive_getters: error
     type_init_formals: error
     unawaited_futures: error
-    unnecessary_const: error
-    unnecessary_new: error
     unrelated_type_equality_checks: error
     valid_regexps: error
 
@@ -80,6 +81,8 @@ analyzer:
     prefer_single_quotes: error  
     prefer_final_locals: error 
     unnecessary_brace_in_string_interps: error
+    unnecessary_const: error
+    unnecessary_new: error
     unnecessary_getters_setters: error
     unnecessary_parenthesis: error
     unnecessary_this: error
