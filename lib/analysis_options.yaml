@@ -7,18 +7,17 @@ linter:
     # additional rules not included in pedantic 1.8.0
     - always_declare_return_types
     - always_put_required_named_parameters_first
-    - avoid_classes_with_only_static_members
     - camel_case_types
     - directives_ordering
     - empty_statements
     - file_names
-    - lines_longer_than_80_chars
     - implementation_imports
     - non_constant_identifier_names
     - package_names
+    - prefer_final_locals
     - prefer_iterable_whereType
     - prefer_single_quotes
-    - prefer_final_locals
+    - prefer_typing_uninitialized_variables
     - unnecessary_brace_in_string_interps
     - unnecessary_const
     - unnecessary_getters_setters
