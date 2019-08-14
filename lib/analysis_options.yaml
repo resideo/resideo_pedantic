@@ -24,7 +24,6 @@ linter:
     - unnecessary_new
     - unnecessary_parenthesis
     - unnecessary_this
-    - unused_import
 
 analyzer:
   exclude:
@@ -85,4 +84,3 @@ analyzer:
     unnecessary_getters_setters: error
     unnecessary_parenthesis: error
     unnecessary_this: error
-    unused_import: error
