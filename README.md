@@ -10,7 +10,7 @@ Include this package under your dev dependencies in `pubspec.yaml`:
 dev_dependencies:
   resideo_pedantic:
     git:
-      url: git@github.com:resideo/resideo_pedantic.git
+      url: https://github.com/resideo/resideo_pedantic.git
 ```
 
 > This can replace `pedantic` if it is listed in your pubspec already.
