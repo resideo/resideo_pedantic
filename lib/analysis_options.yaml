@@ -7,6 +7,7 @@ linter:
     # additional rules not included in pedantic 1.8.0
     - always_declare_return_types
     - always_put_required_named_parameters_first
+    - avoid_void_async
     - camel_case_types
     - directives_ordering
     - empty_statements
@@ -51,6 +52,7 @@ analyzer:
     avoid_return_types_on_setters: error
     avoid_shadowing_type_parameters: error
     avoid_types_as_parameter_names: error
+    avoid_void_async: error
     curly_braces_in_flow_control_structures: error
     empty_catches: error
     empty_constructor_bodies: error
