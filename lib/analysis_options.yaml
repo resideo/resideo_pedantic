@@ -30,6 +30,7 @@ analyzer:
   exclude:
     - lib/**.g.dart
     - lib/generated/**
+    - packages/**
     - test_driver/**
     - test/**
 
