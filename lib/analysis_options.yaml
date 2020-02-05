@@ -15,8 +15,11 @@ linter:
     - implementation_imports
     - non_constant_identifier_names
     - package_names
+    - prefer_conditional_assignment
     - prefer_final_locals
+    - prefer_if_null_operators
     - prefer_iterable_whereType
+    - prefer_null_aware_operators
     - prefer_single_quotes
     - prefer_typing_uninitialized_variables
     - unnecessary_brace_in_string_interps
@@ -80,6 +83,9 @@ analyzer:
     empty_statements: error
     file_names: error
     lines_longer_than_80_chars: error
+    prefer_conditional_assignment: error
+    prefer_if_null_operators: error
+    prefer_null_aware_operators: error
     prefer_single_quotes: error  
     prefer_final_locals: error 
     unnecessary_brace_in_string_interps: error
