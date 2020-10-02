@@ -1,9 +1,9 @@
 name: resideo_pedantic
-description: A starting point for Dart libraries or applications.
+description: Resideo's pedantic preferences
 publish_to: none
 
 environment:
-  sdk: ">=2.9.2 <3.0.0"
+  sdk: ">=2.10.0 <3.0.0"
 
 dependencies:
   pedantic: ^1.9.0

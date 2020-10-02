@@ -32,11 +32,8 @@ linter:
 
 analyzer:
   exclude:
-    - lib/**.g.dart
-    - lib/generated/**
-    - packages/**
-    - test_driver/**
-    - test/**
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
 
   strong-mode:
     implicit-casts: false
