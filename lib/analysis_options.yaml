@@ -20,6 +20,7 @@ linter:
     - prefer_if_null_operators
     - prefer_iterable_whereType
     - prefer_null_aware_operators
+    - prefer_relative_imports
     - prefer_single_quotes
     - prefer_typing_uninitialized_variables
     - unnecessary_brace_in_string_interps
@@ -46,10 +47,10 @@ analyzer:
     avoid_empty_else: false # unnecessary since empty_statements rule is in place
     null_closures: false
     use_rethrow_when_possible: false
-    slash_for_doc_comments: false 
+    slash_for_doc_comments: false
     prefer_iterable_whereType: false
     unnecessary_null_in_if_null_operators: false
-    
+
     # default pedantic rules set to errors
     avoid_init_to_null: error
     avoid_relative_lib_imports: error
@@ -86,8 +87,8 @@ analyzer:
     prefer_conditional_assignment: error
     prefer_if_null_operators: error
     prefer_null_aware_operators: error
-    prefer_single_quotes: error  
-    prefer_final_locals: error 
+    prefer_single_quotes: error
+    prefer_final_locals: error
     unnecessary_brace_in_string_interps: error
     unnecessary_const: error
     unnecessary_new: error
