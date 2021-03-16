@@ -1,4 +1,4 @@
-include: package:pedantic/analysis_options.1.7.0.yaml
+include: package:pedantic/analysis_options.1.11.0.yaml
 
 # For lint rules and documentation, see http://dart-lang.github.io/linter/lints.
 
